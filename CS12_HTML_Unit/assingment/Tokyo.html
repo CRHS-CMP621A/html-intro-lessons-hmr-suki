@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title Here</title>
+</head>
+<body>
+
+  <!-- All visible content goes inside body -->
+<h1>Tokyo Travel Guide</h1>
+<p>
+    Your complete guide to visiting one of the world's most exciting cities.
+</p>
+<ul>
+    <li><a href="#Overview">Overview</a></li>
+    <li><a href="#Top Attractions">Top Attractions</a></li>
+    <li><a href="#Food & Drink">Food & Drink</a></li>
+    <li><a href="#Getting There">Getting There</a></li>
+    <li><a href="#Plan Your Trip">Plan Your Trip</a></li>
+</ul>
+
+<hr>
+
+<h2 id="#Overview">Overview</h2>
+<p>Tokyo city skyline at night with Tokyo Tower lit up in orange </p>
+<img
+src="image114/tokyo_skyline.png"
+alt="A local photo stored in the images folder"
+width="480"
+/>
+
+<p>
+  Tokyo is the capital of Japan and one of the most visited cities in the world. It blends ancient temples and shrines with towering skyscrapers and cutting-edge technology. Whether you love history, food, fashion, or nature, Tokyo has something for everyone. 
+</p>
+
+<table border = "1">
+  <thead> <!-- Table header section -->
+    <tr>
+      <th>Detial</th>
+      <th>Information</th>
+    </tr>
+  </thead>
+  <tbody> <!-- Table body section -->
+    <tr>
+      <td>Country</td>
+      <td>Japan</td>
+    </tr>
+    <tr>
+      <td>Language </td>
+      <td>Japanese</td>
+    </tr>
+    <tr>
+      <td>Currency </td>
+      <td>Japanese Yen (¥)</td>
+    </tr>
+    <tr>
+      <td>Best Time to Visit</td>
+      <td>March to May (spring) or October to November (autumn)</td>
+    </tr>
+    <tr>
+      <td>Time Zone</td>
+      <td>JST (UTC+9)</td>
+    </tr>
+</table>
+
+<hr>
+
+<h2 id="#Top Attractions">Top Attractions</h2>
+<p>
+  Tokyo has hundreds of things to see and do. Here are the must-see highlights:
+</p>
+<ol>
+  <li>Senso-ji Temple : Tokyo's oldest and most famous Buddhist temple in Asakusa</li>
+  <li> Shibuya Crossing : The world's busiest pedestrian intersection</li>
+  <li>Tokyo Skytree : A 634-metre broadcasting tower with observation decks</li>
+  <li>Shinjuku Gyoen : A beautiful national garden perfect for cherry blossom season</li>
+  <li>Harajuku : Famous for unique street fashion and Takeshita Street shopping</li>
+</ol>
+
+<p>gate with lantern and crowds of tourists </p>
+<img
+src="image114/sensoji.png"
+alt="A local photo stored in the images folder"
+width="480"
+/>
+
+<p>
+  For more information, visit the official tourism website: <a href="https://www.gotokyo.org">Go Tokyo</a>
+</p>
+
+<hr>
+
+<h2 id="#Food & Drink">Food & Drink</h2>
+
+<p>
+  Tokyo has more Michelin-starred restaurants than any other city in the world. Here are some foods you must try: 
+</p>
+
+<ul>
+  <li>Ramen - Rich noodle soup available in dozens of regional styles </li>
+  <li>Sushi & Sashimi - Fresh fish served at everything from conveyor belt restaurants to high-end counters </li>
+  <li>Takoyaki - Grilled octopus balls, a popular street food snack </li>
+  <li>Matcha everything - Green tea ice cream, cakes, lattes, and more</li>
+  <li>Yakitori - Grilled chicken skewers, best enjoyed at a local izakaya </li>
+</ul>
+
+<p>
+  See our <a href="restaurants.html">Recommended Restaurants</a> page for a full list. 
+</p>
+
+<hr>
+
+<h2 id="#Getting There">Getting There</h2>
+
+<p>
+  Tokyo is served by two major international airports: 
+</p>
+
+<table border = "1">
+  <thead> <!-- Table header section -->
+    <tr>
+      <th>Airport</th>
+      <th>Code</th>
+      <th>Distance from City Centre</th>
+      <th>Travel Time by Train</th>
+    </tr>
+  </thead>
+  <tbody> <!-- Table body section -->
+    <tr>
+      <td>Narita International Airport</td>
+      <td>NRT</td>
+      <td>60km</td>
+      <td>~60 minutes</td>
+    </tr>
+    <tr>
+      <td>Haneda Airport</td>
+      <td>HND</td>
+      <td>14km</td>
+      <td>~25 minutes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Once in the city, the Tokyo Metro and JR train lines will take you almost anywhere. Consider purchasing a <strong>Suica card </strong>for easy tap-and-go travel on all trains and buses.
+</p>
+
+<hr>
+
+<h2 id="#Plan Your Trip">Plan Your Trip</h2>
+
+<P>
+  Tell us about your trip and we will send you a personalised travel itinerary! 
+</P>
+
+<form action="/submit" method="post">
+
+  <!-- Label links to input via matching for/id -->
+  <p>
+    <label for="username">Full Name:</label>
+    <input type="text" id="username" placeholder="Your full name"
+           name="username" required>
+  </p>
+  <p>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" placeholder="you@example.com"
+           name="email" required>
+  </p>
+  <p>
+    <label for="arrival_date">Arrival Date:</label>
+    <input type="text" id="arrival_date" placeholder="mm/dd/yyyy"
+           name="arrival_date">
+  </p>
+  <p>
+    <label for="nights">Number of Nights:</label>
+    <input type="text" id="nights" placeholder="e.g. 7"
+           name="nights">
+  </p>
+
+  <p>
+    What kind of traveller are you? 
+  </p>
+
+  <input type="radio" name="traveller"
+      id="solo" value="solo">
+  <label for="solo">Solo</label><br>
+
+  <input type="radio" name="traveller"
+      id="couple" value="couple">
+  <label for="couple">Couple</label><br>
+
+  <input type="radio" name="traveller"
+      id="family" value="family">
+  <label for="family">Family</label><br>
+
+  <input type="radio" name="traveller"
+      id="group" value="group">
+  <label for="group">Group</label><br>
+
+  <p>
+    Main Interest:
+    <select name="interest">
+      <option value="0">-- Choose one --</option>
+      <option value="food">Food</option>
+      <option value="culture">Culture</option>
+      <option value="shopping">Shoppping</option>
+      <option value="anime">Anime</option>
+      <option value="scenery">Scenery</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="message">Anithing elsi we should know?</label><br>
+    <textarea id="message" name="message"
+            rows="4" placeholder="Dietary requirements, accessibility needs, special requests... "> </textarea>
+  </p>
+
+  <button type="submit">Send My itinerary</button>
+  <button type="reset">Clear Form</button>
+
+</form>
+
+<hr>
+
+</body>
+</html>
+
+
+
+
+

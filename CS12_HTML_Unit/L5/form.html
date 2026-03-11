@@ -1,0 +1,27 @@
+<form action="/submit" method="post">
+
+    <!-- Label links to input via matching for/id -->
+    <label for="username">Name:</label>
+    <input type="text" id="username"
+           name="username" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email"
+           name="email">
+  
+    <!-- Radio buttons share the same name -->
+    <input type="radio" name="grade"
+           id="g11" value="11">
+    <label for="g11">Grade 11</label>
+  
+    <!-- Dropdown -->
+    <select name="subject">
+      <option value="cs">Computer Science</option>
+      <option value="math">Math</option>
+    </select>
+  
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="msg"
+              rows="4"></textarea>
+  
+    <button type="submit">Send</button>
